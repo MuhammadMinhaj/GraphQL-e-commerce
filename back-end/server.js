@@ -3,13 +3,14 @@ const graphQL = require('./graphql')
 const app  = express();
 const PORT = process.env.PORT || 8080
 
-// Intialize graphQL API endpoint
+// Intialize graphQL API endpoint 
 graphQL(app)
 
 app.use('/',(req,res)=>{
   res.status(200).json({message:"API worked fine!"})
 })
 
+// bootstrapping project
 function bootstrap(){
   app.listen(PORT,(err)=>{
     if(err){
