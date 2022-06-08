@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080
 graphQL(app)
 
 app.use('/',(req,res)=>{
-  res.status(200).json({message:"API worked fine!"})
+  res.status(200).json({message:"API's main endpoint"})
 })
 
 // bootstrapping project
